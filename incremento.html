@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Incremento Sueldo
+    </title>
+    
+</head>
+<body>
+    <script>
+        let suelini,cat,suelfin,inc;
+        suelini=parseFloat(prompt(`Ingrese el Sueldo Actual`));
+        cat=parseFloat(prompt(`Ingrese la categoria a la que pertenece`));
+        if(cat==1){
+            suelfin=(suelini*0.15)+suelini;
+            inc=0.15;
+        }
+        if(cat==2){
+            suelfin=(suelini*0.1)+suelini;
+            inc=0.1;
+        }
+        if(cat==3){
+            suelfin=(suelini*0.08)+suelini;
+            inc=0.08;
+        }
+        if(cat==4){
+            suelfin=(suelini*0.07)+suelini;
+            inc=0.07;
+        }
+        else{
+            console.log(`Categoria no identificada`);
+        }
+        alert(`Su sueldo inicial es: ${suelini}`);
+        alert(`Con un incremento de: ${inc}`);
+        alert(`Dando un total de: ${suelfin}`);
+        </script> 
+</body>
+</html>
